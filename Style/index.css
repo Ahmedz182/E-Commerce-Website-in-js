@@ -531,8 +531,12 @@ a {
 .nbr {
   color: wheat;
 }
+footer {
+  background-color: black;
+}
 .footerContainer {
   display: flex;
+  margin-top: 40px;
   flex-direction: row;
   min-height: 200px;
   width: 90dvw;
