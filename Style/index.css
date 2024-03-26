@@ -540,7 +540,7 @@ a {
   margin-right: auto;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
   column-gap: 80px;
   background-color: black;
   color: wheat;
@@ -552,6 +552,10 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+.innerFooter > h1 {
+  text-transform: uppercase;
+  opacity: 0.3;
 }
 .social {
   font-size: 1.5rem;
