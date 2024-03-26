@@ -16,7 +16,7 @@ if (cart.length === 0) {
         cartProduct.innerHTML = `
       <span class="cartDesc">
         <span class="deleteItem" data-index="${index}">x</span> 
-        <img src=${img} alt="" />
+        <img src=${img} alt=${title} class="cartImg" />
         <span class="productTitle">${title}</span>
       </span>
       <span class="productPrice"> Rs.${price}</span>
