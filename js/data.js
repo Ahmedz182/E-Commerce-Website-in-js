@@ -2,6 +2,7 @@ import demoData from "../assets/demoData.js";
 let shopProduct = document.querySelector(".shopProduct")
 
 let length = demoData.length
+console.log(length);
 demoData.slice(length - 8, length).map(({ title, price, img, category }) => {
     let productContainer = document.createElement("div")
     productContainer.classList.add("productContainer")
@@ -35,7 +36,7 @@ demoData.slice(length - 8, length).map(({ title, price, img, category }) => {
         alert(title + " Added to Cart")
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        updateCart();
+        ;
 
     })
 

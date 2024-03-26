@@ -509,4 +509,5 @@ a {
 }
 .profileImg {
   clip-path: circle();
+  width: 300px;
 }
