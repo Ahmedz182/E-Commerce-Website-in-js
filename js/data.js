@@ -12,6 +12,7 @@ demoData.slice(length - 8, length).map(({ title, price, img, category, desc }) =
 <img
   class="productImg"
   src=${img}
+  loading="lazy"
   alt="product" />
 </div>
 <div class="productDetail">

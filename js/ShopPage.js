@@ -9,6 +9,7 @@ demoData.map(({ title, price, img, category, desc }) => {
     <div class="productCard">
     <img
     class="productImg"
+    loading="lazy"
     src=${img}
     alt="product" />
     </div>
