@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Profile</title>
+  </head>
+  <script>
+    if (!localStorage.getItem("Login")) {
+      alert("Please log in");
+      location.href = "./Login.html";
+    }
+  </script>
+  <header>
+    <div class="nav">
+      <span class="logo"><a href="./index.html">My Store</a></span>
+      <ul class="menu">
+        <li class="menuItem">
+          <i class="ri-home-line icon"></i>
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="menuItem">
+          <i class="ri-shopping-basket-line icon"></i>
+          <a href="./Shop.html">Shop</a>
+        </li>
+        <li class="menuItem">
+          <i class="ri-caravan-line icon"></i>
+          <a href="./Track.html">Track Order</a>
+        </li>
+
+        <a href="./Cart.html">
+          <i class="ri-shopping-bag-4-line cart"></i>
+          <span id="itemTotal" class="check">0</span>
+        </a>
+
+        <a href="./Login.html">
+          <i class="ri-user-3-line user"></i>
+        </a>
+        <div class="menumbl">
+          <i class="ri-menu-4-fill menuicon"></i>
+        </div>
+      </ul>
+    </div>
+    <div class="sidebar hidden">
+      <ul class="sidemenu">
+        <li class="sidemenuItem">
+          <i class="ri-home-line icon"></i> <a href="./index.html">Home</a>
+        </li>
+        <li class="sidemenuItem">
+          <i class="ri-shopping-basket-line icon"></i>
+          <a href="./Shop.html">Shop</a>
+        </li>
+
+        <li class="sidemenuItem">
+          <i class="ri-caravan-line icon"></i>
+          <a href="./Track.html">Track Order</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="profile">
+      <button class="logout" id="logout">Logout</button>
+      <div class="wrapperProfile">
+        <span
+          ><img src="./assets/img/profile.png" class="profileImg" alt="Profile"
+        /></span>
+        <h1>Welcome back <strong id="fullname"></strong></h1>
+      </div>
+    </div>
+    <script src="./js/style.js"></script>
+  </body>
+</html>
