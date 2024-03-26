@@ -286,6 +286,7 @@ a {
   font-size: medium;
   font-weight: 700;
 }
+
 .productPrice {
   font-weight: 500;
 }
@@ -315,6 +316,16 @@ a {
     width: 70dvw;
     height: 55dvh;
     object-fit: contain;
+  }
+  .productTitle {
+    font-size: small;
+    /* font-weight: 700; */
+  }
+  .cartDesc {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-left: 10px;
   }
 }
 .heading {
