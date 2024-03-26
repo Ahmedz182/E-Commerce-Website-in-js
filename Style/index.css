@@ -291,6 +291,7 @@ a {
   align-items: center;
   cursor: pointer;
   margin: 20px;
+  transition: transform 0.3s ease-in;
 }
 .productCard {
   display: flex;
@@ -301,8 +302,8 @@ a {
   /* box-shadow: 0px 1px 1px 0px #333333; */
   flex-direction: column;
 }
-.productContainer:hover > .productCard {
-  transform: scale(1.12);
+.productContainer:hover {
+  transform: scale(0.9);
 }
 .productCard > .productImg {
   width: 20dvw;
@@ -317,7 +318,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
-
   row-gap: 10px;
 }
 .productTitle {
@@ -328,7 +328,23 @@ a {
 .productPrice {
   font-weight: 500;
 }
-
+.DetailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.PageDetail {
+  display: flex;
+}
+.PageDetail > .productImg {
+  width: 35dvw;
+}
+.PageDesc {
+  display: flex;
+  width: 55dvw;
+  margin-left: 20px;
+  flex-direction: column;
+}
 .shopProduct,
 .shopPage,
 .shopProduct2 {
@@ -367,6 +383,14 @@ a {
     column-gap: 10px;
     padding-left: 10px;
   }
+  .PageDetail > .productImg {
+    width: 90dvw;
+  }
+  .PageDesc {
+    display: flex;
+    width: 95dvw;
+    flex-direction: column;
+  }
 }
 .heading {
   margin: 15px;
@@ -377,7 +401,15 @@ a {
   font-weight: bold;
   word-spacing: 5px;
 }
-.cartBtn {
+.productHeading {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+.cartBtn,
+.cartBtn2 {
   outline: none;
   width: 140px;
   padding: 8px;

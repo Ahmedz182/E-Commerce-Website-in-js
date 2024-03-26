@@ -24,3 +24,5 @@ let lengthCart = JSON.parse(cartItem)
 let itemTotal = document.querySelector("#itemTotal")
 itemTotal.innerHTML = lengthCart.length
 
+
+
