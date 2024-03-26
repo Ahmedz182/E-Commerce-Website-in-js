@@ -357,6 +357,7 @@ a {
   margin-right: 40px;
   justify-content: center;
 }
+
 .cartDesc {
   display: flex;
   align-items: center;
@@ -430,7 +431,7 @@ a {
     rgb(70, 27, 27),
     rgb(226, 40, 40)
   );
-  padding: 20px;
+  padding: 70px;
   border-radius: 5px;
 }
 .Checkoutform {
@@ -484,6 +485,10 @@ a {
   .payment {
     width: 95dvw;
     margin-top: 0px;
+  }
+  .cartPage {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .placeOrder {
